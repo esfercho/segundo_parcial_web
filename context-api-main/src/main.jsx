@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Login from "./routes/Login.jsx";
+import Login from "./routes/Login.tsx";
 import App from "./App.jsx";
 import Productos from "./routes/Productos.jsx";
 import Registro from "./routes/Registro.jsx";
 import RutaProtegida from "./routes/RutaProtegida.jsx";
-import { AuthProvider } from "./auth/AuthProvider.jsx";
+import { AuthProvider } from "./auth/AuthProvider.tsx";
 
 const router = createBrowserRouter([
   {
@@ -31,7 +31,6 @@ const router = createBrowserRouter([
     path: "/App",
     element: <App />,
   },
-  
   
 ]);
 
